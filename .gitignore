@@ -1,0 +1,10 @@
+# Ignore files
+
+bash.sh
+.history
+Pipfile.lock
+.env.dev
+.env
+
+/data
+/src/api/__pycache__
