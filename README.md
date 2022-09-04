@@ -1,23 +1,27 @@
 # Budgetting Web App: API service
 
-## Environment Requirements
+## Requirements
 
 #### If you're developing on Windows:
 
-- chocolatey
-- Docker Desktop
-- docker-cli _(choco install docker-cli)_
-- make _(choco install make)_
+- Run Powershell as administrator
+- Install chocolatey
+- Install Docker Desktop
+- Install docker-cli, if not already installed _(choco install docker-cli)_
+- Install docker-compose, if not already installed _(choco install docker-compose)_
+- Install make _(choco install make)_
 
 #### If you're developing on MacOS:
 
-- Docker Desktop
-- docker-cli
-- make
+- Install Docker Desktop
+- Install docker-cli, if not already installed
+- Install docker-compose, if not already installed
 
-## Setup
+## Environment
 
-1. Clone this repo anywhere in your machine. Then run the `make up` command.
+### Setup
+
+1. Clone this repo anywhere in your machine.
 2. Create `.env` file in your base directory and add your initial postgres values
 
    ```bash
@@ -26,7 +30,7 @@
     POSTGRES_PASS=
    ```
 
-3.
+3. Enter the base directory and run `make up`.
 
 ### Make
 
