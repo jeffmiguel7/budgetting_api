@@ -38,7 +38,6 @@ runserver:
 
 .PHONY: teardown
 teardown: stop
-			@$(DOCKER_COMPOSE) rm $(APP_SERVICE_NAME) $(POSTGRES_SERVICE_NAME) $(IMAGE_NAME)
 			@docker system prune -a
 	
 
