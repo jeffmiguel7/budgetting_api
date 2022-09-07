@@ -7,9 +7,10 @@
 - Run Powershell as administrator
 - Install chocolatey
 - Install Docker Desktop
-- Install docker-cli, if not already installed _(choco install docker-cli)_
-- Install docker-compose, if not already installed _(choco install docker-compose)_
+- Install docker-cli, if not already installed → `choco install docker-cli`
+- Install docker-compose, if not already installed → `choco install docker-compose`
 - Install make _(choco install make)_
+- Install git
 
 #### If you're developing on MacOS:
 
@@ -26,7 +27,7 @@
 
    ```bash
     POSTGRES_DB=
-    POSTGRES_USER=
+    POSTGRES_USER=postgres # default superuser
     POSTGRES_PASS=
    ```
 

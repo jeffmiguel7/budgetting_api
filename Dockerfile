@@ -11,5 +11,4 @@ COPY . ./
 
 EXPOSE 8000
 
-
-# CMD ["python", "src/api/manage.py", "runserver", "0.0.0.0:8000"]
+# CMD ["python", "src/manage.py", "runserver", "0.0.0.0:8000"]
