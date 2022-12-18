@@ -3,7 +3,7 @@ CONTAINER_NAME := budget_runserver
 
 .PHONY: base-docker-build
 base-docker-build:
-		@docker image build -t $(IMAGE_NAME) .
+	@docker image build -t $(IMAGE_NAME) .
 
 
 .PHONY: base-docker-run
