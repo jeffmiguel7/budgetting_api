@@ -86,6 +86,7 @@ help:
 	@echo		teardown		Stop and remove the service and database containers and remove the relative network and volumes.
 	@echo		makemigrations		Create migrations for the service.
 	@echo		migrate			Run migrations for the service.
+	@echo		startapp		Create a Django app.
 	@echo -
 	@echo -
 	@echo Docker development
