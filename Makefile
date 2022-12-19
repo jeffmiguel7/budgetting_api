@@ -37,9 +37,14 @@ runserver:
 		
 
 .PHONY: teardown
+IMAGES?=
 teardown:
 	@$(DOCKER_COMPOSE) down --volumes
-	@docker image rm $(POSTGRES) $(APP_IMAGE)
+	@if [ "$(IMAGES)" = "true" ]; then \
+		docker image rm $(POSTGRES) $(APP_IMAGE); \
+	fi
+
+	
 
 .PHONY: bash
 bash:
@@ -96,4 +101,4 @@ help:
 	@echo -
 
 
-include make-utils/base-builds.mk
+include make-utils/base-builds.mk 
