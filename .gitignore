@@ -7,4 +7,5 @@ Pipfile.lock
 .env
 
 /data
-/src/api/__pycache__
+*__pycache__
+*.idea
