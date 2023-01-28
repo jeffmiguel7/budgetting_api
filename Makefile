@@ -39,6 +39,7 @@ runserver:
 .PHONY: teardown
 IMAGES?=
 teardown:
+	@rm -R data
 	@$(DOCKER_COMPOSE) down --volumes
 	@if [ "$(IMAGES)" = "true" ]; then \
 		docker image rm $(POSTGRES) $(APP_IMAGE); \
