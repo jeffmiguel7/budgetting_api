@@ -4,8 +4,8 @@ from django.contrib.auth.models import User
 from django.http import HttpResponseBadRequest, HttpResponse
 from plaid_access.helpers import get_user_from_request
 from plaid_access.serializers import UserSerializer
-from plaid_access.plaid_info import create_link_token
-from plaid_access.plaid_info import exchange_public_access_token
+from plaid_access.plaid_token import create_link_token
+from plaid_access.plaid_token import exchange_public_access_token
 from rest_framework.decorators import api_view
 
 
